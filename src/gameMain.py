@@ -14,8 +14,8 @@ import json
 NUM_TURNS = 200
 NUM_PLAYERS = 4
 
-VERBOSE = 1
-VISUALIZE = 0
+VERBOSE = True
+VISUALIZE = False
 
 COMPETITION_MODE = 0
 
@@ -139,7 +139,7 @@ def run_game(board, players):
         data["state"].append(curr_turn)
     print('Final Board State')
     
-    if (VISUALIZE):
+    if (True):
         board.draw()
     # data['score'] = score
     jsonData = json.dumps(data)

@@ -299,7 +299,7 @@ class Player(BasePlayer):
         """
         Insert player logic here to determine where to move your units
         """
-
+        print("hi")
         self.execute_single_turn_actions();
         self.schedule_multi_turn_actions();
         self.execute_multi_turn_actions();
